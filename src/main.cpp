@@ -68,6 +68,7 @@ int main(int argc, char *argv[])
   // save image
   transformedImage->save(outputFileName, outputImageWidth, outputImageHeight); 
 
+
   delete transformedImage;
   delete image;
 
