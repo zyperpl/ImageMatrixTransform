@@ -1,13 +1,9 @@
 EXECUTABLE = cgimt
 
 CC         = g++
-FLAGS      = -std=c++17 -Wall -Wextra -Wpedantic -Wno-implicit-fallthrough -I ./src/ -I ./include/ -g -O3
+FLAGS      = -std=c++11 -Wall -Wextra -Wpedantic -Wno-implicit-fallthrough -I ./src/ -I ./include/ -O3
 
-#EM_FLAGS   = -s USE_GLFW=3 -s DEMANGLE_SUPPORT=1 -s GL_FFP_ONLY=1 --preload-file img
-#EXECUTABLE = zdlib_test.js
-#CC	  = em++
-
-LIBS       = -lstdc++ -lm -lGL -lGLU -lGLEW -lglfw -lX11 -lXxf86vm -lXrandr -lpthread -lXi -ldl -lXinerama -lXcursor
+LIBS       = -lstdc++ -lm
 
 SRC_PATH   = ./src
 OBJ_PATH   = ./obj
